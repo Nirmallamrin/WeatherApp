@@ -39,7 +39,7 @@ const App = ()=> {
           <div className='container'>
             <h1 className='city-name'>{data.name}, {data.sys.country}</h1>
             <div className='weather-info'>
-              <div className='temp'>{Math.round(data.main.temp)} C</div>
+              <div className='temp'>{Math.round(data.main.temp - 273.15)}°C</div>
               <div className='coordination'>
                  <div>Lat - {data.coord.lat}</div>
                  <div>Lon - {data.coord.lon}</div>
